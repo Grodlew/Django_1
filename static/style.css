@@ -82,7 +82,7 @@ html, body {
 }
 .basket {
 	display: block;
-	width: 23px;
+	width: 100px;
 	height: 23px;	
 	background-image: url(img/basket.png);
 	position: absolute;
@@ -92,7 +92,7 @@ html, body {
 	padding-left: 27px;
 	color: #555;
 	background-repeat: no-repeat;
-	font-weight: bold;
+	font-size: 12px;
 }
 
 .clearfix:after {
@@ -258,6 +258,16 @@ html, body {
 .explore:active {
 	color: #6c6c6c;
 	border-bottom: 3px solid #6c6c6c;
+}
+
+.products_list .tab-content {
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.products_list .tab-content .block{
+    margin-right: 150px;
+    margin-bottom: 100px;
 }
 
 .tab-content {
