@@ -87,6 +87,11 @@ html, body {
     text-decoration: none;
 }
 
+.admin_container {
+    width: 1366px;
+	margin: 0 auto;
+	min-height: 100%;
+}
 
 .admin_container .menu span {
     margin-left: 10px;
@@ -477,6 +482,10 @@ html, body {
 }
 
 
+.products_list {
+    margin-left: 250px;
+}
+
 .products_list .title {
     margin: 20px auto;
     height: 50px;
@@ -485,10 +494,10 @@ html, body {
 
 .products_list .title h2 {
     margin-top: 0;
-    float: left;
+    float: right;
 }
 
-.products_list .title .paginator{
+.products_list .title .paginator {
     display: block;
     position: relative;
     left: 75px;
@@ -503,7 +512,7 @@ html, body {
     text-decoration: none;
 }
 
-.products_list .title .price_bounds{
+.products_list .title .price_bounds {
     display: block;
     position: relative;
     left: 25px;

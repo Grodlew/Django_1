@@ -30,7 +30,7 @@ class ShopUserRegisterForm(UserCreationForm):
             field.help_text = ''
 
     def clean_age(self):
-        data = self.cleaned_data('age')
+        data = self.cleaned_data['age']
         if data < 18:
             raise forms.ValidationError('Вам меньше 18!')
         return data
@@ -51,7 +51,7 @@ class ShopUserEditForm(UserChangeForm):
                 field.widget = forms.HiddenInput()
 
     def clean_age(self):
-        data = self.cleaned_data('age')
+        data = self.cleaned_data['age']
         if data < 18:
             raise forms.ValidationError('Вам меньше 18!')
         return data

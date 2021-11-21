@@ -22,6 +22,12 @@ html, body {
 	min-height: 100%;
 }
 
+.admin_container {
+    width: 720px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
 .slider {
 	height: 800px;
 	background-image: url(img/slider.jpg); 
@@ -36,6 +42,10 @@ html, body {
 	width: 185px;
 	height: 22px;
 	float: left;
+}
+
+.products_list {
+    margin-left: 250px;
 }
 
 .menu {
