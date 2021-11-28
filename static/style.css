@@ -90,6 +90,7 @@ html, body {
 	top: 63px;
 	left: 1176px;
 }
+
 .basket {
 	display: block;
 	width: 100px;
@@ -103,6 +104,7 @@ html, body {
 	color: #555;
 	background-repeat: no-repeat;
 	font-size: 12px;
+	font-weight: normal;
 }
 
 .clearfix:after {
