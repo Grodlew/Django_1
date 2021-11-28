@@ -3,7 +3,6 @@ import random
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render, get_object_or_404
 
-from basketapp.models import Basket
 from mainapp.models import Product, ProductCategory
 
 
@@ -69,15 +68,6 @@ def products(request, pk=None, page=1):
     }
 
     return render(request, 'mainapp/products.html', context=content)
-
-
-def product(request, pk):
-    links_menu = ProductCategory.objects.all()
-    content = {
-        'product': get_object_or_404(Product, pk=pk),
-        'links_menu': links_menu
-    }
-    return render(request, 'mainapp/product.html', content)
 
 
 def product(request, pk):
