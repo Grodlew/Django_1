@@ -384,6 +384,10 @@ html, body {
     color: #555;
 }
 
+.order_container {
+    width: 1366px;
+}
+
 .basket_container {
     margin: 25px auto;
     width: 700px;
