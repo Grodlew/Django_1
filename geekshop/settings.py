@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-c2ofp916$jro&m8nunbaxghca1j#&1&rqs4xs(f)br@xwe^k$g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,10 +92,18 @@ WSGI_APPLICATION = 'geekshop.wsgi.application'
 
 AUTH_USER_MODEL = 'authapp.Shopuser'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'geekshop',
+        'USER': 'postgres'
     }
 }
 
